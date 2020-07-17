@@ -33,7 +33,7 @@ app.use((req, res, next) => {
 app.use('/session', routes.session);
 app.use('/users', routes.user);
 app.use('/messages', routes.message);
-
+app.use('/amzo', routes.amzo);
 // * Start * //
 
 app.listen(process.env.PORT, () =>
