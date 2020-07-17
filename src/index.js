@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import cors from 'cors';
+import bodyParser from 'body-parser'
 import express from 'express';
 
 import models from './models';
@@ -10,7 +11,7 @@ const app = express();
 // * Application-Level Middleware * //
 
 // Third-Party Middleware
-app.use(express.bodyParser({limit: '50mb'}));
+app.use(bodyParser({limit: '50mb'}));
 app.use(cors());
 
 // Built-In Middleware
