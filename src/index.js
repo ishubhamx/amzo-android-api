@@ -10,7 +10,7 @@ const app = express();
 // * Application-Level Middleware * //
 
 // Third-Party Middleware
-
+app.use(express.bodyParser({limit: '50mb'}));
 app.use(cors());
 
 // Built-In Middleware
